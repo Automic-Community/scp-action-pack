@@ -61,6 +61,22 @@
 </PRPTBOX>
 </PROMPTSET>
 </node>
+<node content="1" id="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY" name="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">
+<PRPTBOX promptset="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">
+<UC4RB_SCP_CONNECT_TIMEOUTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_CONNECT_TIMEOUT#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">5000</UC4RB_SCP_CONNECT_TIMEOUTs.00>
+<UC4RB_SCP_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_HOST#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY"/>
+<UC4RB_SCP_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_PORT#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">22</UC4RB_SCP_PORTs.00>
+<UC4RB_SCP_PRESERVE_ATTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_PRESERVE_ATT#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">Yes</UC4RB_SCP_PRESERVE_ATTs.00>
+<UC4RB_SCP_PWDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_PWD#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY"/>
+<UC4RB_SCP_RECURSIVE_GETs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_RECURSIVE_GET#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">Yes</UC4RB_SCP_RECURSIVE_GETs.00>
+<UC4RB_SCP_SRC_FILES_DIRs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_SRC_FILES_DIR#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY"/>
+<UC4RB_SCP_TGT_FILES_DIRs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_TGT_FILES_DIR#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY"/>
+<UC4RB_SCP_TGT_OVERWRITEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_TGT_OVERWRITE#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">Yes</UC4RB_SCP_TGT_OVERWRITEs.00>
+<UC4RB_SCP_USERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_USER#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY"/>
+</PRPTBOX>
+</PROMPTSET>
+</node>
 </dyntree>
 </dynvalues>
 <CIT/>
@@ -101,27 +117,27 @@
 </node>
 <node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
 <node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
-<node content="1" id="PCK.AUTOMIC_SFTP.PRV.PROMPTSET.GET" name="PCK.AUTOMIC_SFTP.PRV.PROMPTSET.GET" parent="PRPTS" type="PROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_SFTP.PRV.PROMPTSET.GET">
-<PRPTBOX promptset="PCK.AUTOMIC_SFTP.PRV.PROMPTSET.GET">
-<UC4RB_SFTP_CONNECT_TIMEOUTs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SFTP_CONNECT_TIMEOUT#" promptsetname="PCK.AUTOMIC_SFTP.PRV.PROMPTSET.GET">5000</UC4RB_SFTP_CONNECT_TIMEOUTs.00>
-<UC4RB_SFTP_HOSTs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SFTP_HOST#" promptsetname="PCK.AUTOMIC_SFTP.PRV.PROMPTSET.GET"/>
-<UC4RB_SFTP_PORTs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SFTP_PORT#" promptsetname="PCK.AUTOMIC_SFTP.PRV.PROMPTSET.GET">22</UC4RB_SFTP_PORTs.00>
-<UC4RB_SFTP_PRESERVE_ATTs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SFTP_PRESERVE_ATT#" promptsetname="PCK.AUTOMIC_SFTP.PRV.PROMPTSET.GET">Yes</UC4RB_SFTP_PRESERVE_ATTs.00>
-<UC4RB_SFTP_PWDs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SFTP_PWD#" promptsetname="PCK.AUTOMIC_SFTP.PRV.PROMPTSET.GET"/>
-<UC4RB_SFTP_RECURSIVE_GETs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SFTP_RECURSIVE_GET#" promptsetname="PCK.AUTOMIC_SFTP.PRV.PROMPTSET.GET">Yes</UC4RB_SFTP_RECURSIVE_GETs.00>
-<UC4RB_SFTP_SOURCE_FILESs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SFTP_SOURCE_FILES#" promptsetname="PCK.AUTOMIC_SFTP.PRV.PROMPTSET.GET"/>
-<UC4RB_SFTP_TGT_FILES_DIRs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SFTP_TGT_FILES_DIR#" promptsetname="PCK.AUTOMIC_SFTP.PRV.PROMPTSET.GET"/>
-<UC4RB_SFTP_TGT_OVERWRITEs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SFTP_TGT_OVERWRITE#" promptsetname="PCK.AUTOMIC_SFTP.PRV.PROMPTSET.GET">Yes</UC4RB_SFTP_TGT_OVERWRITEs.00>
-<UC4RB_SFTP_USERs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SFTP_USER#" promptsetname="PCK.AUTOMIC_SFTP.PRV.PROMPTSET.GET"/>
-</PRPTBOX>
-</PROMPTSET>
-</node>
 <node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
 <PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
 <AGENTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
 <LOGINs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+<node content="1" id="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY" name="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">
+<PRPTBOX promptset="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">
+<UC4RB_SCP_CONNECT_TIMEOUTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_CONNECT_TIMEOUT#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">5000</UC4RB_SCP_CONNECT_TIMEOUTs.00>
+<UC4RB_SCP_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_HOST#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY"/>
+<UC4RB_SCP_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_PORT#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">22</UC4RB_SCP_PORTs.00>
+<UC4RB_SCP_PRESERVE_ATTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_PRESERVE_ATT#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">Yes</UC4RB_SCP_PRESERVE_ATTs.00>
+<UC4RB_SCP_PWDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_PWD#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY"/>
+<UC4RB_SCP_RECURSIVE_GETs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_RECURSIVE_GET#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">Yes</UC4RB_SCP_RECURSIVE_GETs.00>
+<UC4RB_SCP_SRC_FILES_DIRs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_SRC_FILES_DIR#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY"/>
+<UC4RB_SCP_TGT_FILES_DIRs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_TGT_FILES_DIR#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY"/>
+<UC4RB_SCP_TGT_OVERWRITEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_TGT_OVERWRITE#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">Yes</UC4RB_SCP_TGT_OVERWRITEs.00>
+<UC4RB_SCP_USERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_USER#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -156,6 +172,22 @@
 <PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
 <AGENTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
 <LOGINs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+<node content="1" id="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY" name="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">
+<PRPTBOX promptset="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">
+<UC4RB_SCP_CONNECT_TIMEOUTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_CONNECT_TIMEOUT#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">5000</UC4RB_SCP_CONNECT_TIMEOUTs.00>
+<UC4RB_SCP_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_HOST#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY"/>
+<UC4RB_SCP_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_PORT#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">22</UC4RB_SCP_PORTs.00>
+<UC4RB_SCP_PRESERVE_ATTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_PRESERVE_ATT#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">Yes</UC4RB_SCP_PRESERVE_ATTs.00>
+<UC4RB_SCP_PWDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_PWD#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY"/>
+<UC4RB_SCP_RECURSIVE_GETs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_RECURSIVE_GET#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">Yes</UC4RB_SCP_RECURSIVE_GETs.00>
+<UC4RB_SCP_SRC_FILES_DIRs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_SRC_FILES_DIR#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY"/>
+<UC4RB_SCP_TGT_FILES_DIRs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_TGT_FILES_DIR#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY"/>
+<UC4RB_SCP_TGT_OVERWRITEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_TGT_OVERWRITE#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">Yes</UC4RB_SCP_TGT_OVERWRITEs.00>
+<UC4RB_SCP_USERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_USER#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -217,6 +249,11 @@
 <node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PRPTS" type="PROMPTSET">
 <PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" ontop="1">
 <PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" prptmode="1"/>
+</PROMPTSET>
+</node>
+<node content="1" id="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY" name="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY" ontop="1">
+<PRPTBOX promptset="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY" prptmode="1"/>
 </PROMPTSET>
 </node>
 </dyntree>
