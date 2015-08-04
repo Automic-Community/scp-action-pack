@@ -1,0 +1,52 @@
+*** Settings ***
+Documentation     Testing for SCP runbook
+Suite Setup       Suite Setup
+Force Tags        COPY    unix    win
+Test Template     Copy Template
+Resource          ../../resources/keywords.txt
+
+*** Test Cases ***    SOURCE                            TARGET             OVER WRITE    RETURN CODE    RETURN STATUS                   RETURN REPORT
+Copy file             /root/SCP/desktop.ini             SCP/desktop.ini    YES           0              ${ENDED_OK - ended normally}    /
+
+Copy file question    /root/SCP/deskto?.ini             SCP                YES           0              ${ENDED_OK - ended normally}    /
+
+Copy file star        /root/SCP/*                       SCP                YES           0              ${ENDED_OK - ended normally}    /
+
+Copy file no overwrite
+                      /root/SCP/desktop.ini             SCP/desktop.ini    NO            0              ${ENDED_OK - ended normally}    Skipping ...
+
+Copy folder           /root/SCP/scptest                 SCP/scptest        YES           0              ${ENDED_OK - ended normally}    /
+
+Copy folder star      /root/SCP/*                       SCP/scptest        YES           0              ${ENDED_OK - ended normally}    /
+
+Copy folder no overwrite
+                      /root/SCP/desktop.ini             SCP/desktop.ini    NO            0              ${ENDED_OK - ended normally}    Skipping ...
+
+Copy file abnormal    /root/SCP/desktop_notexist.ini    SCP/desktop.ini    YES           4              ENDED_NOT_OK - aborted          does not exist. Aborting ...
+
+Copy folder abnormal
+                      /root/SCP/scptest_notexist        SCP/scptest        YES           4              ENDED_NOT_OK - aborted          does not exist. Aborting ...
+
+*** Keywords ***
+Suite Setup
+    Init AE And Package
+    Init Target Server
+
+Copy Template
+    [Arguments]    ${source}    ${target}    ${overwrite}    ${returnCode}    ${returnStatus}    ${returnReport}
+    Init Action    ${ACTION_PCK.AUTOMIC_SCP.PUB.ACTION.COPY}
+    Action Set    ${PROMPTSET_COPY_SCP_HOST}    172.16.36.20
+    Action Set    ${PROMPTSET_COPY_SCP_PORT}    22
+    Action Set    ${PROMPTSET_COPY_SCP_USER}    root
+    Action Set    ${PROMPTSET_COPY_SCP_PWD}    ventum2011@
+    Action Set    ${PROMPTSET_COPY_SCP_SRC_FILES_DIR}    ${source}
+    #Action Set    ${PROMPTSET_COPY_SCP_RECURSIVE_GET}    YES
+    Action Set    ${PROMPTSET_COPY_SCP_CONNECT_TIMEOUT}    5000
+    Action Set    ${PROMPTSET_COPY_SCP_TGT_FILES_DIR}    ${_WORKING_DIR}${/}${target}
+    Action Set    ${PROMPTSET_COPY_SCP_TGT_OVERWRITE}    ${overwrite}
+    Action Set    ${PROMPTSET_COPY_SCP_PRESERVE_ATT}    YES
+    Action Execute
+    Action Report Should Be Found
+    Action Return Code Should Be    ${returnCode}
+    Action Return Status Should Be    ${returnStatus}
+    Action Report Should Contain    ${returnReport}
