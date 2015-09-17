@@ -1,2 +1,9 @@
 name: PCK.AUTOMIC_SCP
 source: ae
+binaries:
+- object: RESOURCES/LIBS/PCK.AUTOMIC_SCP.PRV.STORE
+  resources: 
+  - name: SCPTOOL.JAR
+    type: BINARY
+    path: tools/scp-tool/target/scp-tool.jar
+    version: 1.0.0
