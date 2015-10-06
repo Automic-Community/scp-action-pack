@@ -7,8 +7,14 @@
 <OH_SubType/>
 </HEADER>
 <DOCU_Docu state="1" type="text">
-<DOC><![CDATA[Contains actions to securely transfer files between a remote host and an agent.
-]]></DOC>
+<DOC><![CDATA[These actions securely transfer files/directories via network.
+Recursive copy is also supported.
+
+=Setup=
+scp-tool.jar is installed on the machine initiating the copy
+
+=Rollback=
+The network copy actions do not support rollback yet.]]></DOC>
 </DOCU_Docu>
 </DOCU>
 </uc-export>
