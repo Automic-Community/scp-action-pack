@@ -5,3 +5,5 @@ config.yml
 /tools/scp-tool/target
 /tools/scp-tool/.classpath
 /tools/scp-tool/.project
+
+.sonar
