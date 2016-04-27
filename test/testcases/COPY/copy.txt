@@ -5,27 +5,27 @@ Force Tags        COPY    unix    win
 Test Template     Copy Template
 Resource          ../../resources/keywords.txt
 
-*** Test Cases ***    SOURCE                            TARGET             OVER WRITE    RETURN CODE    RETURN STATUS                   RETURN REPORT
-Copy file             /root/SCP/desktop.ini             SCP/desktop.ini    YES           0              ${ENDED_OK - ended normally}    /
+*** Test Cases ***    SOURCE                                                        TARGET                         OVER WRITE    RETURN CODE    RETURN STATUS                   RETURN REPORT
+Copy file             /opt/automic/testdata/PCK.AUTOMIC_SCP/desktop.ini             PCK.AUTOMIC_SCP/desktop.ini    YES           0              ${ENDED_OK - ended normally}    /
 
-Copy file question    /root/SCP/deskto?.ini             SCP                YES           0              ${ENDED_OK - ended normally}    /
+Copy file question    /opt/automic/testdata/PCK.AUTOMIC_SCP/deskto?.ini             PCK.AUTOMIC_SCP                YES           0              ${ENDED_OK - ended normally}    /
 
-Copy file star        /root/SCP/*                       SCP                YES           0              ${ENDED_OK - ended normally}    /
+Copy file star        /opt/automic/testdata/PCK.AUTOMIC_SCP/*                       PCK.AUTOMIC_SCP                YES           0              ${ENDED_OK - ended normally}    /
 
 Copy file no overwrite
-                      /root/SCP/desktop.ini             SCP/desktop.ini    NO            0              ${ENDED_OK - ended normally}    Skipping ...
+                      /opt/automic/testdata/PCK.AUTOMIC_SCP/desktop.ini             PCK.AUTOMIC_SCP/desktop.ini    NO            0              ${ENDED_OK - ended normally}    Skipping ...
 
-Copy folder           /root/SCP/scptest                 SCP/scptest        YES           0              ${ENDED_OK - ended normally}    /
+Copy folder           /opt/automic/testdata/PCK.AUTOMIC_SCP/scptest                 PCK.AUTOMIC_SCP/scptest        YES           0              ${ENDED_OK - ended normally}    /
 
-Copy folder star      /root/SCP/*                       SCP/scptest        YES           0              ${ENDED_OK - ended normally}    /
+Copy folder star      /opt/automic/testdata/PCK.AUTOMIC_SCP/*                       PCK.AUTOMIC_SCP/scptest        YES           0              ${ENDED_OK - ended normally}    /
 
 Copy folder no overwrite
-                      /root/SCP/desktop.ini             SCP/desktop.ini    NO            0              ${ENDED_OK - ended normally}    Skipping ...
+                      /opt/automic/testdata/PCK.AUTOMIC_SCP/desktop.ini             PCK.AUTOMIC_SCP/desktop.ini    NO            0              ${ENDED_OK - ended normally}    Skipping ...
 
-Copy file abnormal    /root/SCP/desktop_notexist.ini    SCP/desktop.ini    YES           4              ENDED_NOT_OK - aborted          does not exist. Aborting ...
+Copy file abnormal    /opt/automic/testdata/PCK.AUTOMIC_SCP/desktop_notexist.ini    PCK.AUTOMIC_SCP/desktop.ini    YES           4              ENDED_NOT_OK - aborted          does not exist. Aborting ...
 
 Copy folder abnormal
-                      /root/SCP/scptest_notexist        SCP/scptest        YES           4              ENDED_NOT_OK - aborted          does not exist. Aborting ...
+                      /opt/automic/testdata/PCK.AUTOMIC_SCP/scptest_notexist        PCK.AUTOMIC_SCP/scptest        YES           4              ENDED_NOT_OK - aborted          does not exist. Aborting ...
 
 *** Keywords ***
 Suite Setup
@@ -40,7 +40,6 @@ Copy Template
     Action Set    ${PROMPTSET_COPY_SCP_USER}    root
     Action Set    ${PROMPTSET_COPY_SCP_PWD}    ventum2011@
     Action Set    ${PROMPTSET_COPY_SCP_SRC_FILES_DIR}    ${source}
-    #Action Set    ${PROMPTSET_COPY_SCP_RECURSIVE_GET}    YES
     Action Set    ${PROMPTSET_COPY_SCP_CONNECT_TIMEOUT}    5000
     Action Set    ${PROMPTSET_COPY_SCP_TGT_FILES_DIR}    ${_WORKING_DIR}${/}${target}
     Action Set    ${PROMPTSET_COPY_SCP_TGT_OVERWRITE}    ${overwrite}
