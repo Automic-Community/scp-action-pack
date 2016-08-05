@@ -104,6 +104,7 @@ public class GetFiles extends AbstractPublicFeature {
 
     }
 
+
     /*
      * (non-Javadoc)
      * 
@@ -160,5 +161,6 @@ public class GetFiles extends AbstractPublicFeature {
         errorCode = abstractCopy.retrieve();
         return errorCode;
     }
+
 
 }
