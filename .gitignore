@@ -1,10 +1,7 @@
 connection.properties
-
 config.yml
-/tools/scp-tool/.settings
-/tools/scp-tool/target
-/tools/scp-tool/.classpath
-/tools/scp-tool/.project
-
-.sonar
+**/.settings
+**/target
+**/.classpath
+**/.project
 .sonar
