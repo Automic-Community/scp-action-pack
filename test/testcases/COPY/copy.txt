@@ -6,7 +6,8 @@ Test Template     Copy Template
 Resource          ../../resources/keywords.txt
 
 *** Test Cases ***    SOURCE                                                        TARGET                         OVER WRITE    RETURN CODE    RETURN STATUS                   RETURN REPORT
-Copy file             /opt/automic/testdata/PCK.AUTOMIC_SCP/desktop.ini             PCK.AUTOMIC_SCP/desktop.ini    YES           0              ${ENDED_OK - ended normally}    /
+Copy file             [Tags]                                                        SMOKE_TEST
+                      /opt/automic/testdata/PCK.AUTOMIC_SCP/desktop.ini             PCK.AUTOMIC_SCP/desktop.ini    YES           0              ${ENDED_OK - ended normally}    /
 
 Copy file question    /opt/automic/testdata/PCK.AUTOMIC_SCP/deskto?.ini             PCK.AUTOMIC_SCP                YES           0              ${ENDED_OK - ended normally}    /
 
