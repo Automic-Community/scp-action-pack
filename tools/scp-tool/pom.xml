@@ -36,7 +36,7 @@
 			<artifactId>wsdl4j</artifactId>
 			<version>1.6.2</version>
 		</dependency>
-		<!-- <dependency>
+		<dependency>
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-core</artifactId>
 			<version>${logback.version}</version>
@@ -51,7 +51,7 @@
 			<artifactId>logback-access</artifactId>
 			<version>${logback.version}</version>
 			<scope>runtime</scope>
-		</dependency> -->
+		</dependency>
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>log4j-over-slf4j</artifactId>

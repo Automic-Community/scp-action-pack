@@ -13,6 +13,7 @@
 commons-discovery version 0.2 Apache 1.1 Copyright (C) 1999-2001 The Apache Software Foundation
 jaxrpc version 1.1 Common Development and Distribution License (CDDL-1.0)
 wsdl4j version 1.6.2 Common Public License 1.0
+logback-core, logback-classic, logback-access version 1.2.3 Eclipse Public License v1.0
 log4j-over-slf4j version 1.7.5 MIT (c) 2004-2013 QOS.ch
 activation version 1.1.1 COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.0
 axis version 1.4 Apache 2.0 Copyright (C) 2006 The Apache Software Foundation
