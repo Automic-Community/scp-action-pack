@@ -64,16 +64,16 @@
 <node content="1" id="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY" name="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">
 <PRPTBOX promptset="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">
-<UC4RB_SCP_CONNECT_TIMEOUTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_CONNECT_TIMEOUT#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">5000</UC4RB_SCP_CONNECT_TIMEOUTs.00>
-<UC4RB_SCP_HOSTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_HOST#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY"/>
-<UC4RB_SCP_PORTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_PORT#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">22</UC4RB_SCP_PORTs.00>
-<UC4RB_SCP_PRESERVE_ATTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_PRESERVE_ATT#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">YES</UC4RB_SCP_PRESERVE_ATTs.00>
-<UC4RB_SCP_PWDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_PWD#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">--10</UC4RB_SCP_PWDs.00>
-<UC4RB_SCP_RECURSIVE_GETs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_RECURSIVE_GET#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">YES</UC4RB_SCP_RECURSIVE_GETs.00>
-<UC4RB_SCP_SRC_FILES_DIRs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_SRC_FILES_DIR#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY"/>
-<UC4RB_SCP_TGT_FILES_DIRs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_TGT_FILES_DIR#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY"/>
-<UC4RB_SCP_TGT_OVERWRITEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_TGT_OVERWRITE#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">YES</UC4RB_SCP_TGT_OVERWRITEs.00>
-<UC4RB_SCP_USERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_USER#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY"/>
+<UC4RB_SCP_CONNECT_TIMEOUTs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_CONNECT_TIMEOUT#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">EXT:@artifact_source/custom/connection_timeout</UC4RB_SCP_CONNECT_TIMEOUTs.00>
+<UC4RB_SCP_HOSTs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_HOST#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">EXT:@artifact_source/custom/host</UC4RB_SCP_HOSTs.00>
+<UC4RB_SCP_PORTs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_PORT#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">EXT:@artifact_source/custom/port</UC4RB_SCP_PORTs.00>
+<UC4RB_SCP_PRESERVE_ATTs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_PRESERVE_ATT#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">EXT:@artifact_source/custom/preserve_att</UC4RB_SCP_PRESERVE_ATTs.00>
+<UC4RB_SCP_PWDs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_PWD#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">EXT:@artifact_source/custom/password</UC4RB_SCP_PWDs.00>
+<UC4RB_SCP_RECURSIVE_GETs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_RECURSIVE_GET#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">EXT:@artifact_source/custom/recursive_download</UC4RB_SCP_RECURSIVE_GETs.00>
+<UC4RB_SCP_SRC_FILES_DIRs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_SRC_FILES_DIR#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">EXT:@artifact/custom/source_path</UC4RB_SCP_SRC_FILES_DIRs.00>
+<UC4RB_SCP_TGT_FILES_DIRs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_TGT_FILES_DIR#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">&amp;UC4RB_ARTIFACT_DIR#</UC4RB_SCP_TGT_FILES_DIRs.00>
+<UC4RB_SCP_TGT_OVERWRITEs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_TGT_OVERWRITE#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">&amp;UC4RB_OVERWRITE_FILES#</UC4RB_SCP_TGT_OVERWRITEs.00>
+<UC4RB_SCP_USERs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_USER#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">EXT:@artifact_source/custom/username</UC4RB_SCP_USERs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -132,16 +132,16 @@
 <node content="1" id="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY" name="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">
 <PRPTBOX promptset="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">
-<UC4RB_SCP_CONNECT_TIMEOUTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_CONNECT_TIMEOUT#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">5000</UC4RB_SCP_CONNECT_TIMEOUTs.00>
-<UC4RB_SCP_HOSTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_HOST#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY"/>
-<UC4RB_SCP_PORTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_PORT#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">22</UC4RB_SCP_PORTs.00>
-<UC4RB_SCP_PRESERVE_ATTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_PRESERVE_ATT#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">YES</UC4RB_SCP_PRESERVE_ATTs.00>
-<UC4RB_SCP_PWDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_PWD#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">--10</UC4RB_SCP_PWDs.00>
-<UC4RB_SCP_RECURSIVE_GETs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_RECURSIVE_GET#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">YES</UC4RB_SCP_RECURSIVE_GETs.00>
-<UC4RB_SCP_SRC_FILES_DIRs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_SRC_FILES_DIR#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY"/>
-<UC4RB_SCP_TGT_FILES_DIRs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_TGT_FILES_DIR#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY"/>
-<UC4RB_SCP_TGT_OVERWRITEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_TGT_OVERWRITE#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">YES</UC4RB_SCP_TGT_OVERWRITEs.00>
-<UC4RB_SCP_USERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_USER#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY"/>
+<UC4RB_SCP_CONNECT_TIMEOUTs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_CONNECT_TIMEOUT#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">EXT:@artifact_source/custom/connection_timeout</UC4RB_SCP_CONNECT_TIMEOUTs.00>
+<UC4RB_SCP_HOSTs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_HOST#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">EXT:@artifact_source/custom/host</UC4RB_SCP_HOSTs.00>
+<UC4RB_SCP_PORTs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_PORT#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">EXT:@artifact_source/custom/port</UC4RB_SCP_PORTs.00>
+<UC4RB_SCP_PRESERVE_ATTs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_PRESERVE_ATT#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">EXT:@artifact_source/custom/preserve_att</UC4RB_SCP_PRESERVE_ATTs.00>
+<UC4RB_SCP_PWDs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_PWD#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">EXT:@artifact_source/custom/password</UC4RB_SCP_PWDs.00>
+<UC4RB_SCP_RECURSIVE_GETs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_RECURSIVE_GET#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">EXT:@artifact_source/custom/recursive_download</UC4RB_SCP_RECURSIVE_GETs.00>
+<UC4RB_SCP_SRC_FILES_DIRs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_SRC_FILES_DIR#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">EXT:@artifact/custom/source_path</UC4RB_SCP_SRC_FILES_DIRs.00>
+<UC4RB_SCP_TGT_FILES_DIRs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_TGT_FILES_DIR#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">&amp;UC4RB_ARTIFACT_DIR#</UC4RB_SCP_TGT_FILES_DIRs.00>
+<UC4RB_SCP_TGT_OVERWRITEs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_TGT_OVERWRITE#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">&amp;UC4RB_OVERWRITE_FILES#</UC4RB_SCP_TGT_OVERWRITEs.00>
+<UC4RB_SCP_USERs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_USER#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">EXT:@artifact_source/custom/username</UC4RB_SCP_USERs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -244,16 +244,16 @@
 <node content="1" id="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY" name="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">
 <PRPTBOX promptset="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">
-<UC4RB_SCP_CONNECT_TIMEOUTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_CONNECT_TIMEOUT#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">5000</UC4RB_SCP_CONNECT_TIMEOUTs.00>
-<UC4RB_SCP_HOSTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_HOST#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY"/>
-<UC4RB_SCP_PORTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_PORT#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">22</UC4RB_SCP_PORTs.00>
-<UC4RB_SCP_PRESERVE_ATTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_PRESERVE_ATT#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">YES</UC4RB_SCP_PRESERVE_ATTs.00>
-<UC4RB_SCP_PWDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_PWD#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">--10</UC4RB_SCP_PWDs.00>
-<UC4RB_SCP_RECURSIVE_GETs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_RECURSIVE_GET#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">YES</UC4RB_SCP_RECURSIVE_GETs.00>
-<UC4RB_SCP_SRC_FILES_DIRs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_SRC_FILES_DIR#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY"/>
-<UC4RB_SCP_TGT_FILES_DIRs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_TGT_FILES_DIR#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY"/>
-<UC4RB_SCP_TGT_OVERWRITEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_TGT_OVERWRITE#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">YES</UC4RB_SCP_TGT_OVERWRITEs.00>
-<UC4RB_SCP_USERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_USER#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY"/>
+<UC4RB_SCP_CONNECT_TIMEOUTs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_CONNECT_TIMEOUT#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">EXT:@artifact_source/custom/connection_timeout</UC4RB_SCP_CONNECT_TIMEOUTs.00>
+<UC4RB_SCP_HOSTs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_HOST#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">EXT:@artifact_source/custom/host</UC4RB_SCP_HOSTs.00>
+<UC4RB_SCP_PORTs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_PORT#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">EXT:@artifact_source/custom/port</UC4RB_SCP_PORTs.00>
+<UC4RB_SCP_PRESERVE_ATTs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_PRESERVE_ATT#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">EXT:@artifact_source/custom/preserve_att</UC4RB_SCP_PRESERVE_ATTs.00>
+<UC4RB_SCP_PWDs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_PWD#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">EXT:@artifact_source/custom/password</UC4RB_SCP_PWDs.00>
+<UC4RB_SCP_RECURSIVE_GETs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_RECURSIVE_GET#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">EXT:@artifact_source/custom/recursive_download</UC4RB_SCP_RECURSIVE_GETs.00>
+<UC4RB_SCP_SRC_FILES_DIRs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_SRC_FILES_DIR#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">EXT:@artifact/custom/source_path</UC4RB_SCP_SRC_FILES_DIRs.00>
+<UC4RB_SCP_TGT_FILES_DIRs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_TGT_FILES_DIR#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">&amp;UC4RB_ARTIFACT_DIR#</UC4RB_SCP_TGT_FILES_DIRs.00>
+<UC4RB_SCP_TGT_OVERWRITEs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_TGT_OVERWRITE#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">&amp;UC4RB_OVERWRITE_FILES#</UC4RB_SCP_TGT_OVERWRITEs.00>
+<UC4RB_SCP_USERs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_USER#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">EXT:@artifact_source/custom/username</UC4RB_SCP_USERs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -294,16 +294,16 @@
 <node content="1" id="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY" name="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">
 <PRPTBOX promptset="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">
-<UC4RB_SCP_CONNECT_TIMEOUTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_CONNECT_TIMEOUT#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">5000</UC4RB_SCP_CONNECT_TIMEOUTs.00>
-<UC4RB_SCP_HOSTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_HOST#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY"/>
-<UC4RB_SCP_PORTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_PORT#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">22</UC4RB_SCP_PORTs.00>
-<UC4RB_SCP_PRESERVE_ATTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_PRESERVE_ATT#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">YES</UC4RB_SCP_PRESERVE_ATTs.00>
-<UC4RB_SCP_PWDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_PWD#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">--10</UC4RB_SCP_PWDs.00>
-<UC4RB_SCP_RECURSIVE_GETs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_RECURSIVE_GET#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">YES</UC4RB_SCP_RECURSIVE_GETs.00>
-<UC4RB_SCP_SRC_FILES_DIRs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_SRC_FILES_DIR#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY"/>
-<UC4RB_SCP_TGT_FILES_DIRs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_TGT_FILES_DIR#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY"/>
-<UC4RB_SCP_TGT_OVERWRITEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_TGT_OVERWRITE#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">YES</UC4RB_SCP_TGT_OVERWRITEs.00>
-<UC4RB_SCP_USERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_USER#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY"/>
+<UC4RB_SCP_CONNECT_TIMEOUTs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_CONNECT_TIMEOUT#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">EXT:@artifact_source/custom/connection_timeout</UC4RB_SCP_CONNECT_TIMEOUTs.00>
+<UC4RB_SCP_HOSTs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_HOST#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">EXT:@artifact_source/custom/host</UC4RB_SCP_HOSTs.00>
+<UC4RB_SCP_PORTs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_PORT#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">EXT:@artifact_source/custom/port</UC4RB_SCP_PORTs.00>
+<UC4RB_SCP_PRESERVE_ATTs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_PRESERVE_ATT#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">EXT:@artifact_source/custom/preserve_att</UC4RB_SCP_PRESERVE_ATTs.00>
+<UC4RB_SCP_PWDs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_PWD#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">EXT:@artifact_source/custom/password</UC4RB_SCP_PWDs.00>
+<UC4RB_SCP_RECURSIVE_GETs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_RECURSIVE_GET#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">EXT:@artifact_source/custom/recursive_download</UC4RB_SCP_RECURSIVE_GETs.00>
+<UC4RB_SCP_SRC_FILES_DIRs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_SRC_FILES_DIR#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">EXT:@artifact/custom/source_path</UC4RB_SCP_SRC_FILES_DIRs.00>
+<UC4RB_SCP_TGT_FILES_DIRs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_TGT_FILES_DIR#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">&amp;UC4RB_ARTIFACT_DIR#</UC4RB_SCP_TGT_FILES_DIRs.00>
+<UC4RB_SCP_TGT_OVERWRITEs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_TGT_OVERWRITE#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">&amp;UC4RB_OVERWRITE_FILES#</UC4RB_SCP_TGT_OVERWRITEs.00>
+<UC4RB_SCP_USERs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SCP_USER#" promptsetname="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY">EXT:@artifact_source/custom/username</UC4RB_SCP_USERs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -377,16 +377,16 @@
 <node content="1" id="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY" name="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY" parent="PRPTS" type="PROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY" ontop="1">
 <PRPTBOX promptset="PCK.AUTOMIC_SCP.PRV.PROMPTSET.COPY" prptmode="1">
-<UC4RB_SCP_HOSTs.00 altview="0" haslist="0"/>
-<UC4RB_SCP_PORTs.00 altview="0" haslist="0">22</UC4RB_SCP_PORTs.00>
-<UC4RB_SCP_USERs.00 altview="0" haslist="0"/>
-<UC4RB_SCP_PWDs.00 altview="0" haslist="0">--10</UC4RB_SCP_PWDs.00>
-<UC4RB_SCP_SRC_FILES_DIRs.00 altview="0" haslist="0"/>
-<UC4RB_SCP_RECURSIVE_GETs.00 altview="0" haslist="0">YES</UC4RB_SCP_RECURSIVE_GETs.00>
-<UC4RB_SCP_CONNECT_TIMEOUTs.00 altview="0" haslist="0">5000</UC4RB_SCP_CONNECT_TIMEOUTs.00>
-<UC4RB_SCP_TGT_FILES_DIRs.00 altview="0" haslist="0"/>
-<UC4RB_SCP_TGT_OVERWRITEs.00 altview="0" haslist="0">YES</UC4RB_SCP_TGT_OVERWRITEs.00>
-<UC4RB_SCP_PRESERVE_ATTs.00 altview="0" haslist="0">YES</UC4RB_SCP_PRESERVE_ATTs.00>
+<UC4RB_SCP_HOSTs.00 altview="1" haslist="0">EXT:@artifact_source/custom/host</UC4RB_SCP_HOSTs.00>
+<UC4RB_SCP_PORTs.00 altview="1" haslist="0">EXT:@artifact_source/custom/port</UC4RB_SCP_PORTs.00>
+<UC4RB_SCP_USERs.00 altview="1" haslist="0">EXT:@artifact_source/custom/username</UC4RB_SCP_USERs.00>
+<UC4RB_SCP_PWDs.00 altview="1" haslist="0">EXT:@artifact_source/custom/password</UC4RB_SCP_PWDs.00>
+<UC4RB_SCP_SRC_FILES_DIRs.00 altview="1" haslist="0">EXT:@artifact/custom/source_path</UC4RB_SCP_SRC_FILES_DIRs.00>
+<UC4RB_SCP_RECURSIVE_GETs.00 altview="1" haslist="0">EXT:@artifact_source/custom/recursive_download</UC4RB_SCP_RECURSIVE_GETs.00>
+<UC4RB_SCP_CONNECT_TIMEOUTs.00 altview="1" haslist="0">EXT:@artifact_source/custom/connection_timeout</UC4RB_SCP_CONNECT_TIMEOUTs.00>
+<UC4RB_SCP_TGT_FILES_DIRs.00 altview="1" haslist="0">&amp;UC4RB_ARTIFACT_DIR#</UC4RB_SCP_TGT_FILES_DIRs.00>
+<UC4RB_SCP_TGT_OVERWRITEs.00 altview="1" haslist="0">&amp;UC4RB_OVERWRITE_FILES#</UC4RB_SCP_TGT_OVERWRITEs.00>
+<UC4RB_SCP_PRESERVE_ATTs.00 altview="1" haslist="0">EXT:@artifact_source/custom/preserve_att</UC4RB_SCP_PRESERVE_ATTs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
