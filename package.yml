@@ -6,4 +6,4 @@ binaries:
   - name: SCPTOOL.JAR
     type: BINARY
     path: tools/scp-tool/target/scp-tool.jar
-    version: 1.1.3
+    version: 1.1.4
