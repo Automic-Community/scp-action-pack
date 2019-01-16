@@ -36,7 +36,7 @@ Suite Setup
 Copy Template
     [Arguments]    ${source}    ${target}    ${overwrite}    ${returnCode}    ${returnStatus}    ${returnReport}
     Init Action    ${ACTION_PCK.AUTOMIC_SCP.PUB.ACTION.COPY}
-    Action Set    ${PROMPTSET_COPY_SCP_HOST}    172.16.36.18
+    Action Set    ${PROMPTSET_COPY_SCP_HOST}    vvnunix02
     Action Set    ${PROMPTSET_COPY_SCP_PORT}    22
     Action Set    ${PROMPTSET_COPY_SCP_USER}    root
     Action Set    ${PROMPTSET_COPY_SCP_PWD}    ventum2011@
