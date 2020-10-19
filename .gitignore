@@ -1,1 +1,7 @@
 connection.properties
+config.yml
+**/.settings
+**/target
+**/.classpath
+**/.project
+.sonar

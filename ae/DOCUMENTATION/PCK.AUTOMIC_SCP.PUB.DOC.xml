@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
+<DOCU name="PCK.AUTOMIC_SCP.PUB.DOC">
+<HEADER state="1">
+<Title>Package documentation</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<OH_SubType/>
+</HEADER>
+<DOCU_Docu state="1" type="text">
+<DOC><![CDATA[These actions securely transfer files/directories via network.
+Recursive copy is also supported.
+
+=Setup=
+scp-tool.jar is installed on the machine initiating the copy
+
+=Rollback=
+The network copy actions do not support rollback yet.]]></DOC>
+</DOCU_Docu>
+</DOCU>
+</uc-export>

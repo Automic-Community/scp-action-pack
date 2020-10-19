@@ -1,0 +1,52 @@
+*** Settings ***
+Documentation     Testing for SCP runbook
+Suite Setup       Suite Setup
+Force Tags        COPY    unix    win
+Test Template     Copy Template
+Resource          ../../resources/keywords.txt
+
+*** Test Cases ***    SOURCE                                                        TARGET                         OVER WRITE    RETURN CODE    RETURN STATUS                   RETURN REPORT
+Copy file             [Tags]                                                        SMOKE_TEST
+                      /opt/automic/testdata/PCK.AUTOMIC_SCP/desktop.ini             PCK.AUTOMIC_SCP/desktop.ini    YES           0              ${ENDED_OK - ended normally}    /
+
+Copy file question    /opt/automic/testdata/PCK.AUTOMIC_SCP/deskto?.ini             PCK.AUTOMIC_SCP                YES           0              ${ENDED_OK - ended normally}    /
+
+Copy file star        /opt/automic/testdata/PCK.AUTOMIC_SCP/*                       PCK.AUTOMIC_SCP                YES           0              ${ENDED_OK - ended normally}    /
+
+Copy file no overwrite
+                      /opt/automic/testdata/PCK.AUTOMIC_SCP/desktop.ini             PCK.AUTOMIC_SCP/desktop.ini    NO            0              ${ENDED_OK - ended normally}    Skipping ...
+
+Copy folder           /opt/automic/testdata/PCK.AUTOMIC_SCP/scptest                 PCK.AUTOMIC_SCP/scptest        YES           0              ${ENDED_OK - ended normally}    /
+
+Copy folder star      /opt/automic/testdata/PCK.AUTOMIC_SCP/*                       PCK.AUTOMIC_SCP/scptest        YES           0              ${ENDED_OK - ended normally}    /
+
+Copy folder no overwrite
+                      /opt/automic/testdata/PCK.AUTOMIC_SCP/desktop.ini             PCK.AUTOMIC_SCP/desktop.ini    NO            0              ${ENDED_OK - ended normally}    Skipping ...
+
+Copy file abnormal    /opt/automic/testdata/PCK.AUTOMIC_SCP/desktop_notexist.ini    PCK.AUTOMIC_SCP/desktop.ini    YES           4              ENDED_NOT_OK - aborted          does not exist. Aborting ...
+
+Copy folder abnormal
+                      /opt/automic/testdata/PCK.AUTOMIC_SCP/scptest_notexist        PCK.AUTOMIC_SCP/scptest        YES           4              ENDED_NOT_OK - aborted          does not exist. Aborting ...
+
+*** Keywords ***
+Suite Setup
+    Init AE And Package
+    Init Target Server
+
+Copy Template
+    [Arguments]    ${source}    ${target}    ${overwrite}    ${returnCode}    ${returnStatus}    ${returnReport}
+    Init Action    ${ACTION_PCK.AUTOMIC_SCP.PUB.ACTION.COPY}
+    Action Set    ${PROMPTSET_COPY_SCP_HOST}    vvnunix02
+    Action Set    ${PROMPTSET_COPY_SCP_PORT}    22
+    Action Set    ${PROMPTSET_COPY_SCP_USER}    root
+    Action Set    ${PROMPTSET_COPY_SCP_PWD}    ventum2011@
+    Action Set    ${PROMPTSET_COPY_SCP_SRC_FILES_DIR}    ${source}
+    Action Set    ${PROMPTSET_COPY_SCP_CONNECT_TIMEOUT}    5000
+    Action Set    ${PROMPTSET_COPY_SCP_TGT_FILES_DIR}    ${_WORKING_DIR}${/}${target}
+    Action Set    ${PROMPTSET_COPY_SCP_TGT_OVERWRITE}    ${overwrite}
+    Action Set    ${PROMPTSET_COPY_SCP_PRESERVE_ATT}    YES
+    Action Execute
+    Action Report Should Be Found
+    Action Return Code Should Be    ${returnCode}
+    Action Return Status Should Be    ${returnStatus}
+    Action Report Should Contain    ${returnReport}
